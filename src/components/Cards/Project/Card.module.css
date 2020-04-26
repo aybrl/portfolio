@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1%;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.863);
+    box-shadow: 0.75px 0.75px 5px  rgba(41, 41, 39, 0.863);
+}
+
+img{
+    width: 100%;
+    height:100%;
+}
+.image{
+    order: 0;
+    max-width: 100%;
+    min-height: 37%;
+    max-height: 37%;
+}
+.title{
+    margin-top: 0.5em;
+    height: 10%;
+    order: 1;
+}
+
+.badges{
+    height: 7%;
+    order: 2;
+}
+.badges .col {
+    padding: 2px;
+    margin-left: 0px;  
+}
+
+.description{
+    order: 3;
+    width: 100%;
+    height: 33%;
+}
+
+.clickButt {
+    height: 5%;
+    order: 4;
+}
+
+p {
+    text-align: justify;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
