@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './App.module.css'
+import Image from 'react-bootstrap/Image'
 
 
 import {} from '@material-ui/core';
@@ -11,7 +12,7 @@ import {ProjectCard, SkillCard, SocialLinkCard, Header} from './components'
 class App extends Component {
     render(){
         return (
-            <div>
+            <div>   
                 <Header></Header>
                 <div className={styles.container}>
                     <div className="row">
