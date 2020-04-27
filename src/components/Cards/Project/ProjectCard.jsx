@@ -7,9 +7,9 @@ import styles from './Card.module.css'
 class ProjectCard extends Component {
     state = {
         title : "Android App",
-        description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        description : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy teum is simply dummy text of the printing and typesetting industry.",
         imageUrl : "'../../../codes.jpg'",
-        technologies : [{variant : "success", value :"Android"},{variant : "success", value :"Java"},{variant : "success", value :"Nodejs"},{variant : "success", value :"MySQL"}],
+        technologies : [{variant : "warning", value :"Android"},{variant : "danger", value :"Java"},{variant : "success", value :"Nodejs"},{variant : "primary", value :"MySQL"}],
     }
     
     render() { 
@@ -36,7 +36,7 @@ class ProjectCard extends Component {
                     <p>{this.state.description}</p>
                 </div>
                 <div className={["row", styles.clickButt].join(' ')}>
-                    <Button>Full Details</Button>
+                    <Button variant="outline-dark">Full Details</Button>
                     {/* Button goes here */}
                 </div>
             </div>

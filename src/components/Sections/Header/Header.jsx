@@ -7,12 +7,13 @@ class Header extends Component {
     state = {  }
     render() { 
         return (
-            <div className={styles.container}>
-                <Navbar>
-                    <Navbar.Brand href="#home">{"</Aybrl>"}</Navbar.Brand>
-                    <Nav>
+            <Navbar expand="lg">
+                <Navbar.Brand id={styles.navBrand} href="/">{"</Aybrl>"}</Navbar.Brand>
+                <Navbar.Toggle id={styles.toggle}/>
+                <Navbar.Collapse className="justify-content-end">
+                    <Nav className={styles.navigation}>
                         <Nav.Item >
-                            <Nav.Link href="/home">About</Nav.Link>
+                            <Nav.Link href="#">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="skills">Skills</Nav.Link>
@@ -30,9 +31,8 @@ class Header extends Component {
                             <Nav.Link eventKey="contact">Contact</Nav.Link>
                         </Nav.Item>
                     </Nav>
-                </Navbar>
-                
-            </div>
+                </Navbar.Collapse>
+            </Navbar>
         );
     }
 }
