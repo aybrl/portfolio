@@ -4,9 +4,9 @@
     justify-content: flex-start;
     align-items: center;
     margin: 1%;
-    width: 275px;
+    width: 280px;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.863);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0.75px 0.75px 5px  rgba(41, 41, 39, 0.863);
 }
 
@@ -21,24 +21,28 @@ img{
     max-height: 37%;
 }
 .title{
+    align-items: center;
     margin-top: 0.5em;
-    height: 10%;
+    height: 7%;
     order: 1;
 }
 
 .badges{
-    height: 7%;
+    align-items: center;
+    height: 8%;
     order: 2;
 }
 .badges .col {
     padding: 2px;
-    margin-left: 0px;  
 }
 
 .description{
+    align-items: center;
     order: 3;
-    width: 100%;
+    overflow: hidden;
+    width: 95%;
     height: 33%;
+    margin-bottom: 4%;
 }
 
 .clickButt {
@@ -46,9 +50,8 @@ img{
     order: 4;
 }
 
-p {
+span {
     text-align: justify;
     margin-left: 2%;
     margin-right: 2%;
   }
-

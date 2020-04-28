@@ -1,27 +1,42 @@
 import React, { Component } from 'react';
-import styles from './App.module.css'
-import Image from 'react-bootstrap/Image'
 
+import './App.css'
 
-import {} from '@material-ui/core';
-
-// eslint-disable-next-line
-import {ProjectCard, SkillCard, SocialLinkCard, Header} from './components'
+ // eslint-disable-next-line
+import {ProjectCard, SkillCard, SocialLinkCard, Header, About} from './components'
 
 
 class App extends Component {
+    state = {
+        logoUrl : "",
+        heroUrl : "",
+        title : "<Aybrl/>",
+        description : "Android and Back-end Developer."
+    }
     render(){
         return (
-            <div>   
-                <Header></Header>
-                <div className={styles.container}>
-                    <div className="row">
-                        <ProjectCard></ProjectCard>
+            <section>
+            
+                <section className="hero">
+                    <Header/>
+                    <div className="hero-content">
+                        <h2>{this.state.title}</h2>
+                        <div>{this.state.description}</div>
+                        <button className="btn-hero">Get Me!</button>
                     </div>
-                </div>
-            </div>
+                </section>
+                <main>
+                    <ProjectCard></ProjectCard>
+                    {/*<div className="hero-image" style={style.heroStyle}>
+                        <header className="hero-text">
+                            <ProjectCard></ProjectCard>
+                        </header>
+                    </div>*/}
+                </main>
+            </section>
         );
     }
 }
+
 
 export default App;

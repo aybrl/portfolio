@@ -1,27 +1,20 @@
-@media(min-width:588px){
-    
-    .navBar {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-top: 2%;
-        object-fit: cover;
-    }
+a { 
+    color: white !important;
+    font-family: 'Montserrat';
+}   
 
-    a {
-        color: aliceblue;
-        text-emphasis: none;
-        font-weight: lighter;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        margin-left: 1%;
-    }   
-
-    a:last-child{
-        margin-right: 5%;
-    }
-    .container{
-        width: 100%;
-        height: 100%;
-    }
+.navigation {
+    margin-right: 2%;
 }
+
+ #navBrand {
+     margin-left: 1%;
+ }
+
+ #navBrand:hover{
+     color: rgb(255, 218, 6) !important;
+ }
+
+ #toggle{
+    background-color: white;
+ }

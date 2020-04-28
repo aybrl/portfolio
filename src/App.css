@@ -1,0 +1,52 @@
+.hero{
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox Styling */
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+
+    /* Background styles */
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.37)), url('./nasa.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.hero h2 {
+    font-size: 4rem;
+}
+
+.hero-content {
+    transform: translate(0,30vh);
+}
+
+.btn-hero{
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-family: 'OCR A';
+    /* Margins */
+    margin-top: 15px;
+    /* Border styles */
+    border: 0.5px solid white;
+    border-radius: 5px;
+    /* Styles */
+    background-color: rgba(0, 0, 0, 0.562);
+    width: 110px;
+    height: 35px;
+}
+
+.btn-hero:hover{
+    background-color: rgba(255, 218, 6, 0.808);
+    color: black;
+    border: 0.5px solid black;
+}

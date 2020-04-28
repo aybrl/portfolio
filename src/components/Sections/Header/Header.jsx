@@ -7,11 +7,11 @@ class Header extends Component {
     state = {  }
     render() { 
         return (
-            <Navbar expand="md">
-                <Navbar.Brand href="/">{"</Aybrl>"}</Navbar.Brand>
-                <Navbar.Toggle />
+            <Navbar expand="lg" >
+                <Navbar.Brand id={styles.navBrand} href="/">{"</Aybrl>"}</Navbar.Brand>
+                <Navbar.Toggle id={styles.toggle}/>
                 <Navbar.Collapse className="justify-content-end">
-                    <Nav>
+                    <Nav className={styles.navigation}>
                         <Nav.Item >
                             <Nav.Link href="#">About</Nav.Link>
                         </Nav.Item>
