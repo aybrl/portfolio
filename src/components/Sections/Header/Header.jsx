@@ -12,23 +12,23 @@ class Header extends Component {
                 <Navbar.Toggle id={styles.toggle}/>
                 <Navbar.Collapse className="justify-content-end">
                     <Nav className={styles.navigation}>
-                        <Nav.Item >
-                            <Nav.Link href="#">About</Nav.Link>
+                        <Nav.Item>
+                            <Nav.Link href="/about" eventKey="about" className={styles.navitem}>About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="skills">Skills</Nav.Link>
+                            <Nav.Link href="/skills" eventKey="skills" className={styles.navitem}>Skills</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="certf">Certifications</Nav.Link>
+                            <Nav.Link href="/certifications" eventKey="certf" className={styles.navitem}>Certifications</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="resume">Resume</Nav.Link>
+                            <Nav.Link href="/resume" eventKey="resume" className={styles.navitem}>Resume</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="portfolio">Portfolio</Nav.Link>
+                            <Nav.Link href="/portfolio" eventKey="portfolio" className={styles.navitem}>Portfolio</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="contact">Contact</Nav.Link>
+                            <Nav.Link href="/contact" eventKey="contact" className={styles.navitem}>Contact</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

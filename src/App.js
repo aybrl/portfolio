@@ -1,39 +1,26 @@
 import React, { Component } from 'react';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {Home, About, Soon} from './pages'
+
+import Error from './pages/404'
 
 import './App.css'
 
- // eslint-disable-next-line
-import {ProjectCard, SkillCard, SocialLinkCard, Header, About} from './components'
-
-
 class App extends Component {
-    state = {
-        logoUrl : "",
-        heroUrl : "",
-        title : "<Aybrl/>",
-        description : "Android and Back-end Developer."
-    }
     render(){
         return (
-            <section>
-            
-                <section className="hero">
-                    <Header/>
-                    <div className="hero-content">
-                        <h2>{this.state.title}</h2>
-                        <div>{this.state.description}</div>
-                        <button className="btn-hero">Get Me!</button>
-                    </div>
-                </section>
-                <main>
-                    <ProjectCard></ProjectCard>
-                    {/*<div className="hero-image" style={style.heroStyle}>
-                        <header className="hero-text">
-                            <ProjectCard></ProjectCard>
-                        </header>
-                    </div>*/}
-                </main>
-            </section>
+            <Router>
+                <Switch>
+                    <Route exact path= "/" component = {Home} />
+                    <Route exact path= "/home" component = {Home} />
+                    <Route exact path= "/about" component={About}/>
+                    <Route exact path= "/contact" component={Soon}/>
+                    <Route exact path= "/skills" component={Soon}/>
+                    <Route exact path= "/portfolio" component={Soon}/>
+                    <Route exact path= "/resume" component={Soon}/>
+                    <Route component={Error}/>
+                </Switch>
+            </Router>
         );
     }
 }

@@ -1,0 +1,23 @@
+.page-container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 15pt;
+    text-align: center;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.81)), url('../../assets/images/bg-only.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.page-container a {
+    color: rgb(255, 187, 0) !important;
+}

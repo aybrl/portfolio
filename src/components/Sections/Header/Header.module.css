@@ -7,6 +7,10 @@ a {
     margin-right: 2%;
 }
 
+.navitem:hover {
+    color: rgb(255, 218, 6) !important;
+}
+
  #navBrand {
      margin-left: 1%;
  }

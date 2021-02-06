@@ -22,7 +22,7 @@ class ProjectCard extends Component {
                      <h2>{this.state.title}</h2>
                 </div>
                 <div className={["row", styles.badges].join(' ')}>
-                    {/* Project technologies goes here */}
+                    {/* Project technologies go here */}
                     {
                         this.state.technologies.map(badge => 
                             <div className={styles.col}>

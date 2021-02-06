@@ -1,12 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 .hero{
     /* Sizing */
     width: 100vw;
     height: 100vh;
-
-    /* Flexbox Styling */
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
 
     /* Text styles */
     text-align: center;
@@ -14,7 +11,7 @@
     font-family: 'Montserrat';
 
     /* Background styles */
-    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.37)), url('./nasa.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.37)), url('./assets/images/bg-hero.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,7 +19,7 @@
 }
 
 .hero h2 {
-    font-size: 4rem;
+    font-size: 58pt;
 }
 
 .hero-content {
@@ -30,10 +27,6 @@
 }
 
 .btn-hero{
-    /* Text styles */
-    color: white;
-    text-decoration: none;
-    font-family: 'OCR A';
     /* Margins */
     margin-top: 15px;
     /* Border styles */
@@ -41,12 +34,15 @@
     border-radius: 5px;
     /* Styles */
     background-color: rgba(0, 0, 0, 0.562);
-    width: 110px;
-    height: 35px;
+    width: 140px;
+    height: 40px;
 }
 
 .btn-hero:hover{
-    background-color: rgba(255, 218, 6, 0.808);
-    color: black;
+    background-color: rgb(255, 187, 0);
     border: 0.5px solid black;
+}
+
+a {
+    text-decoration: none !important;
 }

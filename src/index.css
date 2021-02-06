@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
 html, body {
     height: 100%;
     width: 100%;
     overflow-x: auto;
+}
+
+p a {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+#btn-contact{
+  font-family: 'open-sans';
+}
+
+.desc-div {
+    margin: 1%;
+    font-family: 'montserrat';
+    font-size: 10pt;
+    color: rgb(255, 255, 255);
 }
 
 /* width */
